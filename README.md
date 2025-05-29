@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Sending MIDI from Estuary to a DAW like REAPER is a reliable process but requires us to set up a communication pathway that goes from Estuary to SuperCollider and the from there to your DAW of choice.
+Sending MIDI from Estuary to a DAW like REAPER is a reliable process but requires us to set up a communication pathway that goes from Estuary to `SuperCollider` and the from there to your DAW of choice.
 
 In this project we will be using REAPER as our DAW of choice. While not free, REAPER, can be used without limitations before buying. We will also he using a number of free virtual instruments. However the workflow should work for any DAW and virtual instrument.
 
@@ -15,37 +15,37 @@ The files in this repository contain a sample REAPER project as well as the code
    To install this repository click con the green "Code" button. Then click on "Download Repository". Afterwards decompress the zip at your preferred location.
    ![Download Dialog](images/download-repository.jpg)
 
-2. SuperCollider - A synthesis server, language and integrated development environment (IDE).
+2. `SuperCollider` - A synthesis server, language and integrated development environment (IDE).
 
-   To install SuperCollider please follow the instructions [here](https://supercollider.github.io/downloads).
+   To install `SuperCollider` please follow the instructions [here](https://supercollider.github.io/downloads).
 
-3. SuperDirt - A SuperCollider extension that handles [TidalCycles](https://tidalcycles.org/)/MiniTidal messages to produce sound or send midi messages elsewhere.
+3. `SuperDirt` - A `SuperCollider` extension that handles [TidalCycles](https://tidalcycles.org/)/MiniTidal messages to produce sound or send midi messages elsewhere.
 
-   To install SuperDirt run the following line in the SuperCollider IDE:
+   To install `SuperDirt` run the following line in the `SuperCollider` IDE:
 
    ```supercollider
    include("SuperDirt");
    ```
 
-4. Vowel Quark - A SuperCollider extension that contains vowel-like filter (required by SuperDirt).
+4. Vowel Quark - A `SuperCollider` extension that contains vowel-like filter (required by `SuperDirt`).
 
-   To install the quark run the follwing line in the SuperCollider IDE:
+   To install the quark run the follwing line in the `SuperCollider` IDE:
 
    ```supercollider
    Quarks.install("https://github.com/supercollider-quarks/Vowel");
    ```
 
-5. SC3 Plugins (optional) - A suite of SuperCollider extensions, useful for extra synths made available in SuperCollider for Estuary's MiniTidal.
+5. SC3 Plugins (optional) - A suite of `SuperCollider` extensions, useful for extra synths made available in `SuperCollider` for Estuary's `MiniTidal`.
 
    To install the plugins you can download the build for your OS [here](https://supercollider.github.io/sc3-plugins/).
 
-6. Node.js - A JavaScript environment necessary to run SuperDirtSocket (read below).
+6. `Node.js` - A JavaScript environment necessary to run `SuperDirtSocket` (read below).
 
    To install follow the instructions [here](https://nodejs.org/en/download).
 
-7. SuperDirtSocket - In charge of communicating [OSC messages](https://en.wikipedia.org/wiki/Open_Sound_Control) (containing audio event data) coming from Estuary to SuperCollider.
+7. `SuperDirtSocket` - In charge of communicating [OSC messages](https://en.wikipedia.org/wiki/Open_Sound_Control) (containing audio event data) coming from Estuary to `SuperCollider`.
 
-   This repository is already setup to use SuperDirt socket (more instructions below). For use elsewhere places, please refer to [these instructions](https://github.com/piraran/superDirtSocket).
+   This repository is already setup to use `SuperDirt` socket (more instructions below). For use elsewhere places, please refer to [these instructions](https://github.com/piraran/superDirtSocket).
 
 8. REAPER (OPTIONAL for the sample project, but feel free to substitute for your DAW of choice).
 
@@ -67,13 +67,13 @@ The files in this repository contain a sample REAPER project as well as the code
    cd ~/path/to/this/project
    ```
 
-2. In the terminal install SuperDirtSocket in the current directory (you only to do this once):
+2. In the terminal install `SuperDirtSocket` in the current directory (you only to do this once):
 
    ```sh
    npm install
    ```
 
-3. In the same terminal run SuperDirtSocket and leave it open:
+3. In the same terminal run `SuperDirtSocket` and leave it open:
 
    ```sh
    npx superDirtSocket --superCollider 57120 -v
@@ -81,11 +81,11 @@ The files in this repository contain a sample REAPER project as well as the code
 
    When sound event data arrives from Estuary, you will be able to see it logged in here.
 
-4. Open this repository's `init.scd` file on the SuperCollider IDE.
+4. Open this repository's `init.scd` file on the `SuperCollider` IDE.
 
 5. Run the script by placing the cursor inside the `( ... )` (parenthesis block, e.g. somewhere between lines 1 and 12) and press `ctrl+Enter` (on Linux and Windows) or `cmd+Enter` (on MacOS).
 
-6. Open Estuary and go to settings (the `?` icon). Uncheck the `WebDirt` option and check the `SuperDirt`. This ensures events are sent and processed by SuperCollider (as `WebDirt` can't generate MIDI).
+6. Open Estuary and go to settings (the `?` icon). Uncheck the `WebDirt` option and check the `SuperDirt`. This ensures events are sent and processed by `SuperCollider` (as `WebDirt` can't generate MIDI).
 
 7. On Estuary, select the `minitidal` language on different boxes and run something like this on each one:
 
@@ -118,7 +118,7 @@ The files in this repository contain a sample REAPER project as well as the code
    every 2 (fast 2)  $ note "<<0 0 0 0 12> 7*<1 2>>" + note "-24" # s "mididevice" # pI "midichan" "3"
    ```
 
-   On terminal running SuperDirtSocket you should see something like:
+   On terminal running `SuperDirtSocket` you should see something like:
 
    ```js
    {
@@ -142,9 +142,9 @@ The files in this repository contain a sample REAPER project as well as the code
 
 # Troubleshooting
 
-## Nothing appears on the SuperDirtSocket terminal window
+## Nothing appears on the `SuperDirtSocket` terminal window
 
-On Estuary, make sure that the WebDirt option is turned of and the SuperDirt option is turned on.
+On Estuary, make sure that the `WebDirt` option is turned of and the `SuperDirt` option is turned on.
 
 ## Only a few messages arrive to the DAW:
 
