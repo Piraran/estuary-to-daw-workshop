@@ -1,0 +1,14 @@
+{
+  "name": "piraran-synth-workshop",
+  "version": "1.0.0",
+  "description": "Repository hosting the code and th files for the live coding workshop at Open Ears 2024",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@diegovdc/superdirt-socket": "0.0.5"
+  }
+}
