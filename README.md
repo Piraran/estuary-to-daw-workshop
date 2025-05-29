@@ -20,7 +20,7 @@ The files in this repository contain a sample REAPER project as well as the code
 
 1. This repository
 
-   To install this repository click con the green "Code" button. Then click on "Download Repository". Afterwards decompress the zip at your preferred location.
+   To install this repository click con the green "Code" button. Then click on "Download Zip" button. Afterwards decompress the zip at your preferred location.
    ![Download Dialog](images/download-repository.jpg)
 
 2. `SuperCollider` - A synthesis server, language and integrated development environment (IDE).
