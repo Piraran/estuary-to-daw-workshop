@@ -11,7 +11,8 @@ The files in this repository contain a sample REAPER project as well as the code
 ## Preparatory installation
 
 1. This repository
-   To install this repository click _TODO_.
+   To install this repository click con the green "Code" button. Then click on "Download Repository". Afterwards decompress the zip at your preferred location.
+   ![Download Dialog](images/download-repository.jpg)
 
 2. SuperCollider - A synthesis server, language and integrated development environment (IDE).
    To install SuperCollider please follow the instructions [here](https://supercollider.github.io/downloads).
@@ -77,7 +78,7 @@ When sound event data arrives from Estuary, you will be able to see it logged in
 
 6. Open this repository's `init.scd` file on the SuperCollider IDE.
 
-7. Run the script by _TODO_.
+7. Run the script by placing the cursor inside the `( ... )` (parenthesis block, e.g. somewhere between lines 1 and 12) and press `ctrl+Enter` (on Linux and Windows) or `cmd+Enter` (on MacOS).
 
 8. Open Estuary and go to settings (the `?` icon). Uncheck the `WebDirt` option and check the `SuperDirt`. This ensures events are sent and processed by SuperCollider (as `WebDirt` can't generate MIDI).
 
@@ -128,7 +129,7 @@ Note the use of `mididevice` and refer to `init.scd` for details about this.
 
 **Please note that due to the browser's limitations, the browser window should be on the same desktop as your DAW, otherwise the Estuary will be put to sleep by the browser and you may not see any messages logged in the terminal.**
 
-10. Open the sample REAPER project in the `estuary-midi-reaper-sample-project` directory.
+10. Open the sample REAPER project in the `estuary-midi-reaper-sample-project` directory. At this point sound should be produced.
 
 **NOTE: If you choose to use your own DAW, you should set up your tracks so that they receive MIDI input from your configured device (in `init.scd`). The sample `MiniTidal` lines will send different instrument data to channels 1-4.**
 
