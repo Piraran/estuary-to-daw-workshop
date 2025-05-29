@@ -1,5 +1,13 @@
 # MIDI Communication between Estuary & REAPER
 
+- [MIDI Communication between Estuary \& REAPER](#midi-communication-between-estuary--reaper)
+  - [Introduction](#introduction)
+  - [Preparatory installation](#preparatory-installation)
+  - [Running the sample project.](#running-the-sample-project)
+- [Troubleshooting](#troubleshooting)
+  - [Nothing appears on the `SuperDirtSocket` terminal window](#nothing-appears-on-the-superdirtsocket-terminal-window)
+  - [Only a few messages arrive to the DAW:](#only-a-few-messages-arrive-to-the-daw)
+
 ## Introduction
 
 Sending MIDI from Estuary to a DAW like REAPER is a reliable process but requires us to set up a communication pathway that goes from Estuary to `SuperCollider` and the from there to your DAW of choice.
