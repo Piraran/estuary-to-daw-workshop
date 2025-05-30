@@ -84,7 +84,7 @@ The files in this repository contain a sample REAPER project as well as the code
 3. In the same terminal run `SuperDirtSocket` and leave it open:
 
    ```sh
-   npx superDirtSocket --superCollider 57120 -v
+   npm start
    ```
 
    When sound event data arrives from Estuary, you will be able to see it logged in here.
